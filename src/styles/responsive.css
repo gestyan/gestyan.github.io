@@ -1,0 +1,128 @@
+.rest-list__item {
+  display: grid;
+  grid-row-gap: 16px;
+}
+
+.hero {
+  background-image: url("../../dist/images/hero-image_3-large.jpg");
+}
+
+@media screen and (max-width: 420px) {
+  .header__title {
+    transition: font-size 0.3s;
+    font-size: 18px !important;
+    font-weight: 500;
+    padding: 12px 0;
+  }
+
+  .rest-item__thumbnail {
+    max-height: 200px;
+    max-width: 100%;
+    transition: ease-in 0.3s;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .hero {
+    background-image: url("../../dist/images/hero-image_3-small.jpg");
+  }
+
+  .nav {
+    text-align: right;
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+  .nav__list {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    text-align: right;
+    width: 50%;
+  }
+  .nav__item {
+    display: list-item !important;
+    background-color: #fff;
+    width: 90%;
+    border-bottom: 1px solid #e0e0e0;
+    list-style: none;
+    text-align: right;
+    display: block;
+  }
+
+  .header__title {
+    transition: font-size 0.3s;
+    font-size: 24px;
+  }
+  .header__menu__container {
+    text-align: right;
+  }
+  .header__inner {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+  }
+
+  .open {
+    display: block;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .rest-item__desc {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .rest-item__content {
+    padding: 16px 32px 32px 32px;
+  }
+
+  .rest-item__title {
+    font-size: 18px;
+  }
+
+  .rest-item__desc {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .rest-list__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .rest-list__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  main {
+    max-width: 1320px;
+  }
+}
